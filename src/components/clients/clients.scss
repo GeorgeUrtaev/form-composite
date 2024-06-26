@@ -1,0 +1,156 @@
+.clients
+{
+	padding-top: 80px;
+	margin-bottom: 80px;
+}
+.clients__titlle
+{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 19.8px;
+	margin-bottom: 25px;
+	color: rgba(255, 255, 255, 1);
+}	
+.clients__wrap-list
+{
+	padding: 20px;
+	background: rgba(34, 37, 37, 1);
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+.clients__wrap-text
+{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 15.4px;
+	color: rgba(198, 202, 202, 1);
+	margin-bottom: 15px;
+}
+.clients__list-items
+{
+	display: flex;
+	align-items: center;
+	gap:6px;
+	margin-bottom: 15px;
+	span 
+	{
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 15.4px;
+		color: #C6CACA;
+	}
+}
+.crug
+{
+	width: 4px;
+	height: 4px;
+	border-radius: 100%;
+	background: rgba(25, 190, 203, 1);
+}
+.clients__picture
+{
+	margin-bottom: 20px;
+	border-radius: 20px;
+	background: rgba(34, 37, 37, 1);
+}
+.clients__picture-wrap
+{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	overflow-x: scroll;
+	gap: 30px;
+	img 
+	{
+		width: 90px;
+		height: 65px;
+	}
+}
+.clients__btn
+{
+	border: 1px solid #C6CACA;
+	border-radius: 106px;
+	width: 100%;
+	background: rgba(27, 30, 30, 1);
+	height: 50px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 15.4px;
+	color:#FFFFFF;
+	line-height: 50px;
+	text-align: center;
+}
+
+
+
+
+
+
+@media(min-width: 1024px)
+{
+	.clients
+	{
+		padding-top: 150px;
+		margin-bottom: 150px;
+	}
+	.clients__titlle
+	{
+		font-size: 33px;
+		font-weight: 500;
+		line-height: 36.3px;
+		margin-bottom: 45px;
+	}
+	.clients__wrap-list
+	{
+		padding: 60px 70px;
+		margin-bottom: 10px;
+	}
+	.clients__wrap-text
+	{
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 26.4px;
+	}
+	.crug
+	{
+		width: 7px;
+		height: 7px;
+	}
+	.clients__list-items
+	{
+		gap: 13px;
+		span 
+		{
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 26.4px;
+		}
+	}
+	.clients__picture-wrap
+	{
+		justify-content: space-between;
+		img
+		{
+			width: 110px;
+			height: 80px;
+		}
+		
+	}
+}
+@media(min-width: 1350px)
+{
+	.clients__picture__rewerse
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+	}
+	.clients__wrap
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
