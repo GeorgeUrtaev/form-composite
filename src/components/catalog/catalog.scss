@@ -1,0 +1,13 @@
+.catalog
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.catalog__item
+{
+	background: black;
+	flex-basis: 30%;
+	height: 100px;
+}

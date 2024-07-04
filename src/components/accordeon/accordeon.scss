@@ -1,0 +1,14 @@
+.accordeon__content
+{
+	height: 0;
+	overflow: hidden;
+	transition: all .3s;
+}
+.accordeon__arrow
+{
+	transition: all .3s;
+}
+.accordeon__arrow.active
+{
+	transform: rotate(180deg);
+}

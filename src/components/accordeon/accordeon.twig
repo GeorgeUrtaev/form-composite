@@ -1,0 +1,13 @@
+<div class="accordeon _accordeon">
+	<div class="accordeon__btn" onclick="mainObj.accordeon.show(this)">
+		<span>{{name}}</span>
+		<img src="{{pathImg}}" class="accordeon__arrow _accArr" alt="">
+	</div>
+	<div class="accordeon__content _accordeonContent">
+		<ul class="_contentHeight">
+			{% for item in items%}
+				<li>{{item}}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,93 @@
+<header>
+	<div class="container container-flex">
+		<a href="#">{% include 'assets/svg/logo.svg' %}</a>
+		<ul class="header__list-top">
+				<li class="header__list-item--top">
+					<a href="#">О компании</a>
+				</li>
+				<li class="header__list-item--top">
+					<a href="#">Проекты</a>
+				</li>
+				<li class="header__list-item--top">
+					<a href="#">Продукция</a>
+				</li>
+				<li class="header__list-item--top">
+					<a href="#">Испытания</a>
+				</li>
+				<li class="header__list-item--top">
+					<a href="#">Карьера</a>
+				</li>
+				<li class="header__list-item--top">
+					<a href="#">Новости</a>
+				</li>
+				<li class="header__list-item--top">
+					<a href="#">Проектировщику</a>
+				</li>
+				<li class="header__list-item--top">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		<div class="header__link-wrap">
+			<div class="phone-tab">
+				{% include 'assets/svg/phoneLogo.svg' %}
+				<a href="tel:+74952155512">+7 (495) 21-555-12</a>
+			</div>
+			<div class="header__burger" onclick="mainObj.header.show(this)">
+				<div class="header__burger-line"></div>
+				<div class="header__burger-line header__burger-line--small"></div>
+			</div>
+		</div>
+	</div>
+	<div class="header__wrap _headerWrap">
+		<div class="container">
+			<p class="header__wrap-subtitle">навигация</p>
+			<ul class="header__list">
+				<li class="header__list-item">
+					<a href="#">О компании</a>
+				</li>
+				<li class="header__list-item">
+					<a href="#">Проекты</a>
+				</li>
+				<li class="header__list-item">
+					{% include "components/accordeon/accordeon.twig" with {'items':
+					['<a href="#">ssss</a>','<a href="#">s2</a>'],name: 'первый',pathImg:'images/arrow.svg'} %}
+				</li>
+				<li class="header__list-item">
+					{% include "components/accordeon/accordeon.twig" with {'items':
+					['<a href="#">ssss</a>','<a href="#">s2</a>'],name: 'второй',pathImg:'images/gr-ar.svg'} %}
+				</li>
+				<li class="header__list-item">
+					<a href="#">Карьера</a>
+				</li>
+				<li class="header__list-item">
+					<a href="#">Новости</a>
+				</li>
+				<li class="header__list-item">
+					<a href="#">Документация</a>
+				</li>
+				<li class="header__list-item">
+					<a href="#">Проектировщику</a>
+				</li>
+				<li class="header__list-item">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+			<div class="header__phone-wrap">
+			<div class="header__phone">
+				<a href="tel:+74952155512">+7 (495) 21-555-12</a>
+				<a href="#">info@formcomposite.ru</a>
+			</div>
+			<button class="header__btn">Задать вопрос</button>
+		</div>
+		</div>
+	</div>
+</header>
+
+
+
+
+
+
+
+
+
