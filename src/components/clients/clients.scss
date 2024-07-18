@@ -166,13 +166,10 @@
 	{
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: repeat(12, 1fr);
+		grid-template-rows: repeat(5, 1fr);
 		grid-column-gap: 0px;
 		grid-row-gap: 25px;
 	}
-	/*.div2 { grid-area: 5 / 1 / 6 / 4; }*/
-	/*.div3 { grid-area: 1 / 7 / 4 / 13; }*/
-	/*.div4 { grid-area: 5 / 7 / 7 / 13; }*/
 	.clients__titlle
 	{
 		padding-top: 50px;

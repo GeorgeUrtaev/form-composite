@@ -283,7 +283,7 @@
 						<div></div>
 					</div>
 					<div class="production__slider-arrows">
-						<div class="swiper-button-prev">
+						<div class="swiper-button-next">
 							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_753_529)">
 <path d="M5.6 1.39999L6.58 2.37999L2.66 6.29999H14V7.69999H2.66L6.58 11.62L5.6 12.6L0 6.99999L5.6 1.39999Z" fill="white" fill-opacity="0.7"/>
@@ -295,7 +295,7 @@
 </defs>
 </svg>
 						</div>
-						<div class="swiper-button-next">
+						<div class="swiper-button-prev">
 							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_753_529)">
 <path d="M5.6 1.39999L6.58 2.37999L2.66 6.29999H14V7.69999H2.66L6.58 11.62L5.6 12.6L0 6.99999L5.6 1.39999Z" fill="white" fill-opacity="0.7"/>
@@ -340,19 +340,155 @@
 			</ul>
 		</div>
 		<div class="clients__picture">
-			<!-- <div class="clients__picture-wrap"> -->
-				<img src="images/nornikel.png" alt="">
-				<img src="images/kolskaya.png" alt="">
-				<img src="images/rusgidro.png" alt="">
-				<img src="images/fosagro.png" alt="">
-				<img src="images/GM.png" alt="">
-			<!-- </div> -->
+			<img onclick="mainObj.gPopup.open('.test-cont')" src="images/nornikel.png" alt="">
+			<img onclick="mainObj.gPopup.open('.test-cont',1)" src="images/kolskaya.png" alt="">
+			<img onclick="mainObj.gPopup.open('.test-cont',2)" src="images/rusgidro.png" alt="">
+			<img onclick="mainObj.gPopup.open('.test-cont',3)" src="images/fosagro.png" alt="">
+			<img onclick="mainObj.gPopup.open('.test-cont',4)" src="images/GM.png" alt="">
 		</div>
 		<button class="clients__btn">
 			Подробнее о компании
 		</button>
 	</div>
-</section>	</main>
+</section>	<div class="g-popup _overlay"></div>	<div class="test-cont" style="display: none;">
+	<div class="g-popup__content">
+		<div class="g-popup__close" onclick="mainObj.gPopup.close()">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.99509 8.76953L18.6025 0.162109L19.8323 1.39186L11.2248 9.99928L19.8339 18.6084L18.6042 19.8381L9.99509 11.229L1.386 19.8381L0.15625 18.6084L8.76534 9.99928L0.157919 1.39186L1.38767 0.162109L9.99509 8.76953Z" fill="#6F7171"/>
+</svg>
+		</div>
+
+		<h2 class="_value">Возможный контент</h2>
+	</div>
+</div>	<section class="news container">
+	<div class="news__title">
+		<h3>Новости</h3>
+		<div class="news__dotted">
+			<div class="news__dotted-items"></div>
+			<div class="news__dotted-items"></div>
+			<div class="news__dotted-items"></div>
+		</div>
+	</div>
+	<div class="news__slider">
+		<div class="news__item _item">
+			<div class="_wr heig">
+				<div class="news__item-el heig " style="background-image: url('images/bigbg.png');">
+					<h3>Обновлённый каталог продукции 2023</h3>
+					<div class="news__item-link container-flex">
+						<span>01.09.23</span>
+						<a href="#">
+							<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.8 0.300049L6.89 1.21005L10.53 4.85005H0V6.15005H10.53L6.89 9.79005L7.8 10.7L13 5.50005L7.8 0.300049Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="news__item _item">
+			<div class="_wr">
+				<div class="news__item-el">
+					<h4>
+						Компания «Формкомпозит» завершает 2022 год активными поставками продукции на ключевые и особо важные объекты страны!
+					</h4>
+					<div class="news__item-link container-flex">
+						<span>12.12.2022</span>
+						<a href="#">
+							<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.8 0.300049L6.89 1.21005L10.53 4.85005H0V6.15005H10.53L6.89 9.79005L7.8 10.7L13 5.50005L7.8 0.300049Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="_wr">
+				<div class="news__item-el">
+					<div class="news__item-wr">
+						<h4>
+							Формкомпозит теперь на YouTube!
+						</h4>
+						<p>
+							Мы рады сообщить, об открытии официального канала компании "Формкомпозит" на платформе видео-хостинга YouTube
+						</p>
+					</div>
+					<div class="news__item-link container-flex">
+						<span>04.08.2022</span>
+						<a href="#">
+							<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.8 0.300049L6.89 1.21005L10.53 4.85005H0V6.15005H10.53L6.89 9.79005L7.8 10.7L13 5.50005L7.8 0.300049Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="news__item _item">
+			<div class="_wr">
+				<div class="news__item-el">
+					<div class="news__item-wr">
+						<h4>
+							Успешное завершение испытаний по ГОСТ 52868-2007
+						</h4>
+						<p>
+							Мы рады сообщить, что компания "Формкомпозит" успешно испытала систему опорных композитных кабельных конструкций согласно ГОСТ 52868-2007!
+						</p>
+					</div>
+					<div class="news__item-link container-flex">
+						<span>04.08.2022</span>
+						<a href="#">
+							<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.8 0.300049L6.89 1.21005L10.53 4.85005H0V6.15005H10.53L6.89 9.79005L7.8 10.7L13 5.50005L7.8 0.300049Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="_wr">
+				<div class="news__item-el" style="background-image: url('images/smallbg.png');">
+					<h4>
+						Запуск производства монтажного страт-профиля
+					</h4>
+					<div class="news__item-link container-flex">
+						<span>12.12.2022</span>
+						<a href="#">
+							<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.8 0.300049L6.89 1.21005L10.53 4.85005H0V6.15005H10.53L6.89 9.79005L7.8 10.7L13 5.50005L7.8 0.300049Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<button class="news__btn _btn container-flex" onclick="mainObj.news.move()">
+		<span class="news__btn-text">Все новости</span>
+		<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.34847 0.580488L2.34847 1.81793L7.29821 1.81793L0.138758 8.97738L1.02264 9.86126L8.1821 2.70181V7.65156H9.41953V0.580488H2.34847Z" fill="#19BECB"/>
+</svg>
+	</button>
+	
+		<!-- <a href="#" class="news__btn">
+			<span class="news__btn-text">Все новости</span>
+			<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.34847 0.580488L2.34847 1.81793L7.29821 1.81793L0.138758 8.97738L1.02264 9.86126L8.1821 2.70181V7.65156H9.41953V0.580488H2.34847Z" fill="#19BECB"/>
+</svg>
+		</a> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</section>	</main>
 	<footer>
 		
 </footer>	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
